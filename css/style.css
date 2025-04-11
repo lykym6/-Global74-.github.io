@@ -1,7 +1,23 @@
 .header{
-    height: 100vh;
-    background:url(https://avatars.mds.yandex.net/get-altay/5479384/2a0000018013c3c6c5cc1009e811bcff95a2/XXL_height) ;
-    background: no-repeat;
-    background-position: center;
+    height: 110vh;
+    background:url(../img/photo.png) no-repeat center ;
     background-size: cover;
+    clip-path: polygon(100% 0, 100% 91%, 56% 100%, 0 90%, 0 0);
+}
+
+.header-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 70px;
+
+    color: rgb(255, 255, 255);
+    background: rgb(0, 0, 35);
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
