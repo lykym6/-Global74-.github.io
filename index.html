@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,52 +8,67 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
-    <header class="header"> 
-    <div class="header-top">
-        <a href="" class="logo">Global74</a>
+     <div class="header-top">
+        <a href="#home" class="link logo block-center">Global74</a>
         <nav class="navigation">
-        <ul class="menu">
+        <ul class="menu block-center">
             <li class="menu-element">
-                <a class="menu-element__link active" href=""> О нас </a>   <!-- кнопки заголовка -->
+                <a class="link menu-element__link active" href="#home"> Главная </a>   <!-- кнопки заголовка -->
             </li>
             <li class="menu-element">
-                <a class="menu-element__link" href=""> Работа </a>
+                <a class="link menu-element__link" href="#about-me"> О&nbsp;нас </a>
             </li>
             <li class="menu-element">
-                <a class="menu-element__link" href=""> Услуги </a>
+                <a class="link menu-element__link" href="#news"> Новости&nbsp;и&nbsp;акции </a>
             </li>
             <li class="menu-element">
-                <a class="menu-element__link" href=""> Заказы </a>
+                <a class="link menu-element__link" href="#Reviews"> Отзывы</a>
             </li>
             <li class="menu-element">
-                <a class="menu-element__link" href=""> Где то</a>
+                <a class="link menu-element__link" href="#work"> Сотрудничество</a>
             </li>
+            <!--
             <li class="menu-element">
-                <a class="menu-element__link" href=""> Кто то </a>
+                <a class="menu-element__links" href=""> Связаться</a>
             </li>
+            
             <li class="menu-element">
-                <a class="menu-element__link" href=""> Чето </a>
+                <a class="menu-element__link" href=""> Сотрудничествао </a>
             </li>
             <li class="menu-element">
                 <a class="menu-element__link" href=""> Связаться </a>
             </li>
+        -->
         </ul>
         </nav>
 
-    <div class="switcher">Ru/Eng</div> <!-- кнопка переключения языка-->
+    <div class="switcher block-center">
+        <ul>
+         <li class="switcher-abo">
+                <a class="link mswitcher-abo_link" href="#contact"> Связаться</a>
+                </ul>
+            </li>
+    
+   
+   
+    </div> <!--кнопка переключения -->
     
     </div>
+    <header class="header" id="home"> 
+        <img class="header__background" src="img/photo.png" alt="background">
+     <div class="header__background-wrapper"></div>
+
+
 
     <div class="header--center">
         <div class="header--center__wrapper">
         <h1 class="name">Global74</h1> <!-- центральное название-->
-        <p class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident delectus quis iste pariatur possimus!</p> <!-- подпись под центральным название -->
+        <p class="description">Строим надёжность. Поставляем качество</p> <!-- подпись под центральным название -->
     </div>
     </div>
     </header>
        
-    <section class="about-me">
+    <section class="about-me" id="about-me">
         <div class="left">     <!--Картинка с лева-->
             <img src="" alt="">
         </div>
@@ -94,7 +109,7 @@
     </section>
    
 
-    <section class="achievements"> 
+    <section class="achievements" id="news"> 
         <h2 class="second-title">dasfnalf</h2> <!--заголовок-->
 
         <ul class="achievements-list">
@@ -106,7 +121,7 @@
         </ul>
     </section>
 
-        <SECTION class="skills">
+        <SECTION class="skills" id="Reviews">
             <h2 class="second-title">qweqe</h2> <!--заголовок-->
                 <p class="section-descripion">qeq</p> <!--под заголовок-->
 
@@ -120,7 +135,7 @@
                 </ul>
         </SECTION> 
         
-        <section class="work">
+        <section class="work" id="work">
         <h2 class="second-title"></h2> <!--заголовок-->
         <div class="work-wrapper">
             <div class="work-element left">
@@ -252,9 +267,9 @@
         </p>
     </div>
         </section>
-
+<!--
         <section class="books"> 
-            <h2 class="second-title">dasfnalf</h2> <!--заголовок-->
+            <h2 class="second-title">dasfnalf</h2>  
             <p class="section-descripion">qeq</p>
     
             <ul class="books-list">
@@ -265,8 +280,8 @@
                 <li class="books-list__element">Lorem ipsum dolor sit amet.</li>
             </ul>
         </section>
-
-        <secction class="contact-me">
+                     -->
+        <secction class="contact-me" id="contact">
             <h2 class="second-title">Обратная связь</h2>
             <form action="" class="cantact-me__form">
                 <div class="input-wrapper">
@@ -289,10 +304,10 @@
     <footer>
         <ul class="socials">
             <li class="social-element">
-                <a href="" class="social-element__link">2123</a> <!--сыллка на социальные сети-->
+                <a href="" class="link social-element__link">2123</a> <!--сыллка на социальные сети-->
             </li>
             <li class="social-element">
-                <a href="" class="social-element__link">2131</a>
+                <a href="" class="link social-element__link">2131</a>
             </li>
         </ul>
         <p class="footer-about">

@@ -11,70 +11,117 @@
 
 
 /*общие стили*/
-a{
+a.link {
     color: var(--color-green);
     text-decoration: none;
     transition: opacity .25s ease;
 }
-a:hover{
+a.link:hover{
     opacity: .7;
+}
+.block-center {
+display: flex;
+align-items: center;
+justify-content: center;
+
 }
 
 /*Хэдр стили*/
 .header{ 
+    position: relative;
+    bottom: 80px;
     height: 110vh;
-    background:url(../img/photo.png) no-repeat center ;
     background-size: cover;
     clip-path: polygon(100% 0, 100% 91%, 56% 100%, 0 90%, 0 0);
 }
 
+
+.header__background{
+    position:absolute;
+    height: inherit;
+    width: 100%;
+    object-fit: cover;
+    filter: saturate() drop-shadow() contrast() blur(0%) brightness() ;
+}
+
+ 
+.header__background-wrapper{
+    position:absolute;
+    height:inherit;
+    width: 100%;
+
+    background:rgb(0, 0, 0, 20%);
+    z-index: 1;
+}
+
+
 .header-top {
+    position: sticky;
+    top: 0;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    z-index: 3;
 
     height: 70px;
     color:#fff;
     background: var(--background-black-opacity)
     
+    
+    
 }
-.header-top a{
+.header-top a.link{
     color: #fff;
 }
-.header-top a.active{
 
-color: var(--color-green);
-
-}
 
 
 .logo{
+    width: 260px;
 font-size: 36px;
 color:#fff;
 
 }
 
-.menu{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
 .menu-element{
-    margin-right: 10px;
+    margin-right: 30px;
     font-size: 22px;
 }
 .menu-element:last-child{
     margin-right: 0;
 }
 
+.menu-element a.link.active, .menu-element a.link:hover {
+
+color: var(--color-green);
+
+}
+
+.switcher{
+    height: 35px;
+    display: flex;
+    align-items: center;
+    width: 260px;
+    padding: 0 10px;
+}
+
+.switcher-abo{
+     margin-right: 30px;
+    font-size: 22px;
+}
+
+
+
 .header--center{
+    position: relative;
     color: #fff;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     height: calc(100vh - 80px);
+    z-index: 2 ;
 
     
 }
@@ -89,12 +136,42 @@ color:#fff;
 .name{
 
     font-size: 50px;
-    line-height: 40px;
+    line-height: 0px;
 
 }
 
 .description{
-
+    display:inline-block;
+    width: 400px;
     font-size: 22px;
+    line-height: 1.5en;
+    white-space: nowrap;
+    border-right: 3px solid transparent;
+    padding-right: 5px;
 
+    overflow: hidden;
+
+    animation: cursor 0.75s 8, print_text 4s steps(38); /* эфект машинки */
+}
+
+@keyframes cursor {
+    0% {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: #fff;
+    }
+
+    100% {
+        border-color: transparent;
+    }
+    
+}
+
+
+@keyframes print_text{
+    from{
+        width: 0;
+    }
 }
