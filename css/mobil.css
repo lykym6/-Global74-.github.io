@@ -1,0 +1,56 @@
+/* Мобильные устройства (до 768px) */
+@media (max-width: 768px) {
+  /* Шапка */
+  .header {
+    height: 90vh;
+    clip-path: none;
+  }
+  .description {
+    width: 100%;
+    white-space: normal;
+    animation: none;
+    border-right: none;
+  }
+
+  /* О компании */
+  .about-me {
+    flex-direction: column;
+  }
+  .about-me .left, 
+  .about-me .right {
+    padding: 0;
+    width: 100%;
+  }
+  .about-me__image {
+    margin: 0 auto 20px;
+    padding-left: 0;
+  }
+
+  /* Услуги */
+  .interest-wrapper {
+    width: 100%;
+  }
+
+  /* Почему мы */
+  .work-wrapper {
+    width: 100%;
+  }
+  .work-wrapper:before {
+    display: none;
+  }
+  .work-element {
+    width: 90%;
+    margin: 0 auto 30px !important;
+  }
+  .work-element.left, 
+  .work-element.right {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  /* Форма */
+  .input-wrapper {
+    width: 100%;
+    float: none;
+  }
+}
