@@ -1,56 +1,384 @@
-/* Мобильные устройства (до 768px) */
-@media (max-width: 768px) {
-  /* Шапка */
-  .header {
-    height: 90vh;
-    clip-path: none;
-  }
-  .description {
-    width: 100%;
-    white-space: normal;
-    animation: none;
-    border-right: none;
-  }
+@media screen and (max-width: 1350px) {
+    .logo {
+        font-size: 32px;
+    }
+    
+    .about-me__image {
+        width: 300px;
+        padding-left: 50px;
+    }
+    
+    .work-wrapper {
+        width: 700px;
+    }
+    
+    .work-element {
+        width: 450px;
+    }
+    
+    .work-element.left {
+        margin-right: 594px;
+    }
+    
+    .work-element.right {
+        margin-left: 594px;
+    }
+}
 
-  /* О компании */
-  .about-me {
-    flex-direction: column;
-  }
-  .about-me .left, 
-  .about-me .right {
-    padding: 0;
-    width: 100%;
-  }
-  .about-me__image {
-    margin: 0 auto 20px;
-    padding-left: 0;
-  }
+@media screen and (max-width: 1200px) {
+    .logo {
+        font-size: 28px;
+        width: 200px;
+    }
+    
+    .menu-element {
+        font-size: 18px;
+        margin-right: 15px;
+    }
+    
+    .switcher {
+        width: 200px;
+    }
+    
+    .about-me {
+        padding: 40px 20px;
+    }
+    
+    .about-me__image {
+        width: 250px;
+    }
+    
+    .about-me__title {
+        font-size: 32px;
+    }
+    
+    .about-me__descriprion {
+        font-size: 18px;
+    }
+    
+    .work-wrapper {
+        width: 600px;
+    }
+    
+    .work-element {
+        width: 400px;
+    }
+    
+    .work-element.left {
+        margin-right: 494px;
+    }
+    
+    .work-element.right {
+        margin-left: 494px;
+    }
+    
+    .interest-wrapper {
+        width: 45%;
+    }
+}
 
-  /* Услуги */
-  .interest-wrapper {
-    width: 100%;
-  }
+@media screen and (max-width: 992px) {
+    .header {
+        height: 100vh;
+        clip-path: polygon(100% 0, 100% 95%, 56% 100%, 0 95%, 0 0);
+    }
+    
+    .header-top {
+        justify-content: space-between;
+        padding: 0 20px;
+    }
+    
+    .navigation {
+        display: none;
+    }
+    
+    .menu-hamburger {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30px;
+        height: 20px;
+        position: fixed;
+        top: 25px;
+        right: 20px;
+        z-index: 100;
+        cursor: pointer;
+        background: transparent;
+        border: none;
+        padding: 0;
+    }
+    
+    .menu-hamburger .line {
+        display: block;
+        height: 3px;
+        width: 100%;
+        background: white;
+        border-radius: 3px;
+        transition: all 0.3s ease;
+    }
+    
+    .menu-hamburger .line1 {
+        transform-origin: 0% 0%;
+    }
+    
+    .menu-hamburger .line2 {
+        opacity: 1;
+        transition: opacity 0.2s ease;
+    }
+    
+    .menu-hamburger .line3 {
+        transform-origin: 0% 100%;
+    }
+    
+    #hamburger:checked ~ .menu-hamburger .line1 {
+        transform: rotate(45deg) translate(1px, -1px);
+    }
+    
+    #hamburger:checked ~ .menu-hamburger .line2 {
+        opacity: 0;
+    }
+    
+    #hamburger:checked ~ .menu-hamburger .line3 {
+        transform: rotate(-45deg) translate(1px, 1px);
+    }
+    
+    #hamburger:checked ~ .header-top .navigation {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.95);
+        z-index: 99;
+        padding-top: 100px;
+        animation: fadeIn 0.3s ease;
+    }
+    
+    @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+    }
+    
+    #hamburger:checked ~ .header-top .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #hamburger:checked ~ .header-top .menu-element {
+        margin: 20px 0;
+        font-size: 24px;
+        opacity: 0;
+        animation: slideIn 0.3s ease forwards;
+    }
+    
+    @keyframes slideIn {
+        from { 
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to { 
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    
+    /* Задержка анимации для каждого пункта меню */
+    #hamburger:checked ~ .header-top .menu-element:nth-child(1) {
+        animation-delay: 0.1s;
+    }
+    #hamburger:checked ~ .header-top .menu-element:nth-child(2) {
+        animation-delay: 0.2s;
+    }
+    #hamburger:checked ~ .header-top .menu-element:nth-child(3) {
+        animation-delay: 0.3s;
+    }
+    #hamburger:checked ~ .header-top .menu-element:nth-child(4) {
+        animation-delay: 0.4s;
+    }
+    
+    .name {
+        font-size: 40px;
+    }
+    
+    .description {
+        font-size: 20px;
+        white-space: normal;
+        animation: none;
+        width: 90%;
+    }
+    
+    .about-me {
+        flex-direction: column;
+    }
+    
+    .about-me .left {
+        padding-right: 0;
+        text-align: center;
+    }
+    
+    .about-me__image {
+        margin: 0 auto;
+        padding-left: 0;
+    }
+    
+    .work-wrapper {
+        width: 100%;
+    }
+    
+    .work-wrapper:before {
+        display: none;
+    }
+    
+    .work-element {
+        width: 90%;
+        margin: 0 auto 40px !important;
+    }
+    
+    .work-element:before {
+        display: none;
+    }
+    
+    .interest-wrapper {
+        width: 45%;
+    }
+    
+    .contact-me__form {
+        padding: 0 20px;
+    }
+    
+    .input-wrapper {
+        width: 100%;
+        float: none !important;
+        margin-bottom: 15px;
+    }
+}
 
-  /* Почему мы */
-  .work-wrapper {
-    width: 100%;
-  }
-  .work-wrapper:before {
-    display: none;
-  }
-  .work-element {
-    width: 90%;
-    margin: 0 auto 30px !important;
-  }
-  .work-element.left, 
-  .work-element.right {
-    margin-left: auto !important;
-    margin-right: auto !important;
-  }
+@media screen and (max-width: 768px) {
+    .header {
+        clip-path: polygon(100% 0, 100% 97%, 56% 100%, 0 97%, 0 0);
+    }
+    
+    .name {
+        font-size: 32px;
+    }
+    
+    .description {
+        font-size: 18px;
+    }
+    
+    .about-me__image {
+        width: 200px;
+    }
+    
+    .second-title {
+        font-size: 28px;
+        margin-bottom: 50px;
+    }
+    
+    .second-title::after {
+        --underline-width: 250px;
+    }
+    
+    .interest-wrapper {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .interest-image {
+        width: 200px;
+    }
+}
 
-  /* Форма */
-  .input-wrapper {
-    width: 100%;
-    float: none;
-  }
+@media screen and (max-width: 375px) {
+    .header {
+        height: 90vh;
+        clip-path: polygon(100% 0, 100% 97%, 56% 100%, 0 97%, 0 0);
+    }
+    
+    .header-top {
+        height: 60px;
+    }
+    
+    .logo {
+        font-size: 24px;
+        width: 150px;
+    }
+    
+    .menu-hamburger {
+        top: 20px;
+        right: 15px;
+    }
+    
+    #hamburger:checked ~ .header-top .menu-element {
+        font-size: 20px;
+        margin: 15px 0;
+    }
+    
+    .name {
+        font-size: 28px;
+    }
+    
+    .description {
+        font-size: 16px;
+    }
+    
+    .about-me__title {
+        font-size: 28px;
+    }
+    
+    .about-me__descriprion {
+        font-size: 16px;
+    }
+    
+    .about-me__extra {
+        font-size: 16px;
+    }
+    
+    .second-title {
+        font-size: 24px;
+        margin-bottom: 40px;
+    }
+    
+    .second-title::after {
+        --underline-width: 200px;
+    }
+    
+    .work-element__title {
+        font-size: 20px;
+    }
+    
+    .work-element__description {
+        font-size: 14px;
+    }
+    
+    .work-element__skills-element {
+        font-size: 12px;
+        padding: 6px 10px;
+    }
+    
+    .interest-title {
+        font-size: 18px;
+    }
+    
+    .interest-text {
+        font-size: 14px;
+    }
+    
+    .label {
+        font-size: 18px;
+    }
+    
+    .input, .textarea {
+        font-size: 14px;
+    }
+    
+    .submit {
+        height: 40px;
+        font-size: 16px;
+    }
+    
+    .footer-about {
+        font-size: 12px;
+    }
 }
