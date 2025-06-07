@@ -288,7 +288,63 @@
     .interest-image {
         width: 200px;
     }
+     .about-me__descriprion {
+    display: none;
+  }
+
+  .text-mobile {
+    display: block;
+            margin-bottom: 19px;
+        font-size: 18px;
+  }
+
+.about-me__extra-element{
+    display: none;
 }
+.about-me__extra-mobil {
+    display: flex;
+    flex-direction: column;
+    
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+    max-width: 100%;
+    padding-top: 4px;
+    
+    
+}
+.about-me__extra-mobil span {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.about-me .right{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+    .work-element.left, .work-element.right{
+        width: 252px;
+        border: 0px solid var(--color-green);
+    }
+    .work-wrapper {
+        width: 365px;
+        padding-left: 10px;
+    }
+
+        .contact-me__form {
+        padding: 0px 20px;
+        width: 335px;
+    }
+
+    .socials{
+        padding-right: 51px;
+    }
+}
+
 
 @media screen and (max-width: 375px) {
     .header {
