@@ -325,8 +325,17 @@
 .about-me .right{
     padding-left: 10px;
     padding-right: 10px;
+    
 }
-    .work-element.left, .work-element.right{
+
+.work-element.left, .work-element.right{
+    display: none;
+}
+
+
+
+    .work-element.left-mobil, .work-element.right-mobil{
+        display: block;
         width: 252px;
         border: 0px solid var(--color-green);
     }

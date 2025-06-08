@@ -462,6 +462,9 @@ ul.about-me__extra {
 .work-project__title:hover + .work-tootip {
     display: inline-block;
 }
+.work-element.left-mobil, .work-element.right-mobil{
+    display: none;
+}
 
 /* Обратная связь */
 .contact-me {
