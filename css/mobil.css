@@ -27,6 +27,9 @@
     .work-element.left:before {
         margin-right: 24px;
     }
+     .cta-button {
+        font-size: 21px ;
+    }
 }
 
 @media screen and (max-width: 1200px) {
@@ -70,6 +73,9 @@
     }
     .contact-me__form {
         max-width: 1104px;
+    }
+      .cta-button {
+        font-size: 21px ;
     }
 }
 
@@ -224,6 +230,9 @@
         float: none !important;
         margin-bottom: 15px;
     }
+       .cta-button {
+        font-size: 21px ;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -307,6 +316,9 @@
     .socials {
         padding-right: 51px;
     }
+    .cta-button {
+        font-size: 20px ;
+    }
     
 }
 
@@ -381,5 +393,8 @@
     }
     .footer-about {
         font-size: 12px;
+    }
+     .cta-button {
+        font-size: 15px ;
     }
 }

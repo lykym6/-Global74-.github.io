@@ -16,7 +16,8 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden; /* Убирает белую полосу справа */
-    font-family: Arial, sans-serif;
+    font-family: Inter , sans-serif;
+      
 }
 
 a.link {
@@ -116,19 +117,19 @@ a.link:hover {
 }
 
 .header-top a.link {
-    color: #fff;
+    color: #c7c6c6;;
 }
 
 .logo {
     width: 260px;
-    font-size: 36px;
-    color: #fff;
+    font-size: 41px;
+    color: #ffffff;
     white-space: nowrap;
 }
 
 .menu-element {
     margin-right: 30px;
-    font-size: 22px;
+    font-size: 25px;
 }
 
 .menu-element:last-child {
@@ -150,7 +151,7 @@ a.link:hover {
 
 .switcher-abo {
     margin-right: 30px;
-    font-size: 22px;
+    font-size: 25px;
 }
  
  .switcher-abo a.link:hover {
@@ -183,8 +184,8 @@ a.link:hover {
 
 .description {
     display: inline-block;
-    width: 439px;
-    font-size: 22px;
+    width: 512px;
+    font-size: 24px;
     line-height: 1.5em;
     white-space: nowrap;
     border-right: 3px solid transparent;
@@ -302,7 +303,7 @@ ul.about-me__extra {
 
 .interest-title {
     margin-bottom: 15px;
-    font-size: 20px;
+    font-size: 21px;
     color: var(--color-text-black);
 }
 
@@ -310,6 +311,7 @@ ul.about-me__extra {
     color: var(--color-text);
     margin-bottom: 10px;
     text-align: center;
+    font-size: 18px;
 }
 
 .interest-text:last-of-type {
@@ -358,6 +360,7 @@ ul.about-me__extra {
     font-weight: 600;
     text-decoration: none;
     transition: all 0.3s ease;
+    font-size: 21px;
 }
 
 .cta-button:hover {
@@ -486,14 +489,14 @@ ul.about-me__extra {
 }
 
 .work-element__block-title {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 600;
     color: #444;
     margin-bottom: 15px;
 }
 
 .work-element__description {
-    font-size: 15px;
+    font-size: 16px;
     line-height: 1.6;
     color: var(--colot-gray);
     margin-bottom: 20px;
@@ -772,4 +775,16 @@ ul.about-me__extra {
 
 html {
     scroll-behavior: smooth;
+}
+
+h1, h2, h3, a {
+  font-family: "Times New Roman", Times, serif;
+
+  letter-spacing: 0.5px;
+}
+
+body, p {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+ /* Улучшает читаемость */
 }

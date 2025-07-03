@@ -1,6 +1,5 @@
 const menuHeight = document.querySelector(".header-top").clientHeight;
 
-/* Active link after click */
 document.querySelectorAll(".menu-element__link").forEach(element => {
     element.addEventListener("click", function (e) {
         e.preventDefault();
@@ -24,7 +23,7 @@ document.querySelectorAll(".menu-element__link").forEach(element => {
     });
 });
 
-/* Active link on scroll to section */
+
 const options = {
     threshold: 0.3
 }
@@ -60,7 +59,7 @@ function hasClass(element, className) {
     return element.classList.contains(className);
 }
 
-// Анимация элементов секции work при скролле
+// Анимация элементов секции преймущества при скролле
 const workElements = document.querySelectorAll('.work-element__animation');
 const workOptions = {
     threshold: 0.1,
@@ -86,11 +85,7 @@ workElements.forEach(element => {
         const result = document.querySelector(".form-result");
 
         form.addEventListener("submit", function (e) {
-            e.preventDefault(); // Предотвратить реальную отправку формы
-
-            // Здесь можно добавить отправку на сервер через fetch/AJAX, если нужно
-
-            // Очистить поля формы
+            e.preventDefault(); 
             form.reset();
 
             // Показать сообщение об успешной отправке
